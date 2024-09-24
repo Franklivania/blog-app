@@ -3,6 +3,8 @@ import { client, urlFor } from "@/lib/sanity";
 import Image from "next/image";
 import Link from "next/link";
 
+export const revalidate = 300
+
 async function getData() {
   const query = `
     *[_type == "post"] {

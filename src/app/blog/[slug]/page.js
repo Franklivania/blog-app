@@ -5,6 +5,8 @@ import { client } from "@/lib/sanity";
 import { PortableText } from "next-sanity";
 import { format } from "date-fns";
 
+export const revalidate = 300
+
 export async function getData(slug) {
   const query = `
     *[_type == "post" && slug.current == '${slug}'] {
