@@ -4,5 +4,6 @@ export default defineCliConfig({
   api: {
     projectId: 'qyw74es2',
     dataset: 'production'
-  }
+  },
+  studioHost: 'next-blog-bun'
 })
